@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RANDOM PASSWORD GENERATOR</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="images/rpwg.png" rel="icon" type="image/png">
+
+</head>
+
+<body>
+    <div class="main">
+        <div id="head">
+            <p id="main-title">RANDOM PASSWORD GENERATOR</p>
+            <div id="main-logo"></div>
+        </div>
+        <div class="player">
+            <div class="selector-box">
+                <div id="password-length-input" class="selector-number">
+                    <div id="up" class="number-input-button">+</div>
+                    <div id="down" class="number-input-button">-</div>
+                    <p id="val">10</p>
+                </div>
+                <button id="numbers-button" class="selector-button">NUMBERS</button>
+                <button id="lowercase-button" class="selector-button">LOWERCASE CHARACTERS</button>
+                <button id="uppercase-button" class="selector-button">UPPERCASE CHARACTERS</button>
+                <button id="symbols-button" class="selector-button">SYMBOLS</button>
+            </div>
+            <div class="result-box">
+                <p id="strength-label"></p>
+                <textarea id="result-label" class="result-label" readonly></textarea>
+            </div>
+        </div>
+        <div id="toast">Copied to clipboard</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
