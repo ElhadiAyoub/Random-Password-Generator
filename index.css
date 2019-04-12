@@ -13,9 +13,14 @@
     user-select: none;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     color: white;
     background-color: black;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -160,7 +165,7 @@ body {
 
 #toast {
     position: absolute;
-    bottom: 25px;
+    bottom: 100px;
     background-color: #111;
     font-size: 20px;
     padding: 10px;
