@@ -21,7 +21,6 @@ body {
     color: white;
     background-color: black;
     height: 100%;
-    overflow: hidden;
 }
 
 .main {
@@ -149,7 +148,7 @@ body {
 }
 
 #main-title {
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 @keyframes show {
