@@ -57,7 +57,6 @@ numbersButton.addEventListener("click", function () {
         charStrings.splice(charStrings.indexOf(value), 1);
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 var lowerCaseButton = document.getElementById("lowercase-button");
@@ -71,7 +70,6 @@ lowerCaseButton.addEventListener("click", function () {
         charStrings.splice(charStrings.indexOf(value), 1);
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 var upperCaseButton = document.getElementById("uppercase-button");
@@ -85,7 +83,6 @@ upperCaseButton.addEventListener("click", function () {
         charStrings.splice(charStrings.indexOf(value), 1);
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 var symbolsButton = document.getElementById("symbols-button");
@@ -99,7 +96,6 @@ symbolsButton.addEventListener("click", function () {
         charStrings.splice(charStrings.indexOf(value), 1);
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 
@@ -135,7 +131,6 @@ up.addEventListener("click", function f() {
     val.innerHTML = passwordLength;
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 
@@ -146,7 +141,6 @@ down.addEventListener("click", function f() {
     val.innerHTML = passwordLength;
     getPassword();
     result.value = word;
-    copy();
     check();
 });
 
