@@ -13,7 +13,7 @@
     user-select: none;
 }
 
-html{
+html {
     height: 100%;
 }
 
@@ -180,6 +180,10 @@ body {
     animation: popup 5s ease;
 }
 
+#refresh:active {
+    opacity: .75;
+}
+
 @keyframes popup {
     0% {
         opacity: 0.75;
@@ -195,9 +199,8 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px)
-{
-	#main-title{
-		font-size: 50px;
-	}
+@media only screen and (min-width: 1000px) {
+    #main-title {
+        font-size: 50px;
+    }
 }

@@ -3,6 +3,7 @@ var result = document.getElementById("result-label");
 var val = document.getElementById("val");
 var strength = document.getElementById("strength-label");
 var toast = document.getElementById("toast");
+var regenerate = document.getElementById("refresh");
 
 //Default values
 
@@ -41,14 +42,7 @@ function copy() {
     result.select();
     document.execCommand("copy");
     clearSelection();
-    toast.style.display = "block";
-    toast.style.webkitAnimation = 'none';
-    setTimeout(function () {
-        toast.style.webkitAnimation = '';
-    }, 10);
-    setTimeout(function () {
-        toast.style.display = "none";
-    }, 3000);
+    showMessage("Copied to clipboard");
 }
 
 //Event listners
@@ -192,5 +186,28 @@ function check() {
 //On load
 getPassword();
 result.value = word;
-copy();
+//copy();
 check();
+showMessage("Touch to copy it :)")
+
+result.addEventListener("click", function () {
+    copy();
+});
+
+//Print message
+function showMessage(message) {
+    toast.innerHTML = message;
+    toast.style.display = "block";
+    toast.style.webkitAnimation = 'none';
+    setTimeout(function () {
+        toast.style.webkitAnimation = '';
+    }, 10);
+    setTimeout(function () {
+        toast.style.display = "none";
+    }, 3000);
+}
+
+regenerate.addEventListener("click", function () {
+    getPassword();
+    result.value = word;
+})
